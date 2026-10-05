@@ -8,7 +8,7 @@ dotenv.config();
 const app = express();
 app.use(express.json());
 app.use(cors({
-        origin: '*',
+        origin: 'https://persona-chatbot-nu-ashen.vercel.app',
     }));
 
 const Client = new OpenAI({
