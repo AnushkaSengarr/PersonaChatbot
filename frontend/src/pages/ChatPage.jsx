@@ -52,7 +52,7 @@ const ChatPage = () => {
         setInputMessage('');
         setIsTyping(true);
         try {
-            const response = await axios.post('http://localhost:8080/chat', {
+            const response = await axios.post('https://personachatbot-n7jq.onrender.com/chat', {
                 id: Number(id),
                 content: userMessage.content
             });
